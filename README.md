@@ -1,4 +1,4 @@
-<img src="https://content.audi.co.uk/dam/7_days/CAD/External%20Assets/R8/R8-white/010.png" title="CarInfo" alt="CarInfo" href="https://carinfo1.herokuapp.com/">
+<img src="http://blog.inkjetwholesale.com.au/wp-content/uploads/2017/09/instagram-challenges.png" title="CarInfo" alt="CarInfo" href="https://carinfo1.herokuapp.com/">
 
 # InstaFight
 
