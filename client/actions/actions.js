@@ -1,7 +1,7 @@
 import React from "react";
 
-export function getInstagramData(component, filter) {
-	fetch("api/search/:filter?hashtag=" + filter)
+export function getInstagramData(component, filterH) {
+	fetch("/api/search/:filterH?hashtag=" + filterH)
 	.then(results => {
 		console.log("1");
 		return results.json();

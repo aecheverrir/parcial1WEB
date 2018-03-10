@@ -23,7 +23,7 @@ export default class App extends React.Component {
 
     searchInputCallback(dataFromBanner){
         this.setState({search: dataFromBanner.target.value});
-        this.getInstagramData(this);
+        this.getInstagramData(this, dataFromBanner.target.value);
     }
 
     render () {
