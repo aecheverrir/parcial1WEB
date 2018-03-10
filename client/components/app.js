@@ -6,28 +6,24 @@ import Results from './Results';
 import SideBar from './SideBar';
 
 import { Container, Row, Col } from 'reactstrap';
-import { getCarros } from "../actions/actions";
+import { getInstagramData } from "../actions/actions";
 
 
 export default class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            name: "testName",
-            carros: [],
+            winner: "",
             search: "",
             
         };
-        this.getCarros = getCarros.bind(this);
+        this.getInstagramData = getInstagramData.bind(this);
         this.searchInputCallback = this.searchInputCallback.bind(this);
     }
 
-    componentDidMount() {
-      this.getCarros(this);
-    }
-
     searchInputCallback(dataFromBanner){
-      this.setState({search: dataFromBanner.target.value});
+        this.setState({search: dataFromBanner.target.value});
+        this.getInstagramData(this);
     }
 
     render () {
@@ -52,7 +48,7 @@ export default class App extends React.Component {
           <div style={styles}>
             <Container>
               <Banner callbackApp={this.searchInputCallback}/>
-              <h1>{this.state.search}</h1>
+              <h1> The winner is: {this.state.winner}</h1>
             </Container>
           </div>
         );

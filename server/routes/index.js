@@ -8,6 +8,6 @@ router.get("/", function(req, res) {
 });
 
 // API
-router.use("/api/carros", carroRouter);
+router.use("/api/search", carroRouter);
 
 module.exports = router;

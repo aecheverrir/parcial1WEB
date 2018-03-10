@@ -20,7 +20,8 @@ export default class Banner extends React.Component {
         "borderColor": "#db1d0f",
         "marginColor": "#db1d0f",
         "padding-bottom": "20px",
-        "padding-top": "20px"
+        "padding-top": "20px",
+        "text-align": "center" 
   	};
     var styleH1 = {
         "font-size": "50px",
